@@ -75,7 +75,6 @@ function pageInit () {
           else $('.ui-avatar').prop('src', '').hide()
           $('.ui-name').html(data.name)
           $('.ui-signout').show()
-          $('.ui-history').click()
           parseServerToHistory(historyList, parseHistoryCallback)
         },
         () => {

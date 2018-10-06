@@ -308,7 +308,7 @@ input {
 .ui-or {
     margin: 5px;
 }
-.ui-use-tags {
+.ui-use-tags, .ui-use-note-tags {
     min-width: 172px;
     max-width: 344px;
 }
@@ -368,7 +368,7 @@ select {
     span.ui-or {
         display: block;
     }
-    .ui-use-tags {
+    .ui-use-tags, .ui-use-note-tags {
         max-width: 100%;
     }
 }

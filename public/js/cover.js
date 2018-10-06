@@ -352,8 +352,8 @@ $('.ui-refresh-history').click(() => {
   const lastTags = $('.ui-use-tags').select2('val')
   $('.ui-use-tags').select2('val', '')
   historyList.filter()
-  const lastKeyword = $('.search').val()
-  $('.search').val('')
+  const lastKeyword = $('.search-history').val()
+  $('.search-history').val('')
   historyList.search()
   $('#history-list').slideUp('fast')
   $('.pagination').hide()
@@ -365,7 +365,7 @@ $('.ui-refresh-history').click(() => {
     $('.ui-use-tags').select2('val', lastTags)
     $('.ui-use-tags').trigger('change')
     historyList.search(lastKeyword)
-    $('.search').val(lastKeyword)
+    $('.search-history').val(lastKeyword)
     checkHistoryList()
     $('#history-list').slideDown('fast')
   })
@@ -425,6 +425,6 @@ $('.ui-use-tags').on('change', function () {
   checkHistoryList()
 })
 
-$('.search').keyup(() => {
+$('.search-history').keyup(() => {
   checkHistoryList()
 })
